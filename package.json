@@ -2,9 +2,10 @@
   "name": "backend01",
   "version": "1.0.0",
   "description": "this is only a practice ",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "author": "abhishek maurya",
   "license": "ISC",
@@ -12,5 +13,9 @@
     "express": "^4.19.2",
     "nodemon": "^3.1.4",
     "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.5.2"
   }
 }
